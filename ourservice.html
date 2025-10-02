@@ -107,5 +107,68 @@
     });
   </script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // ✅ Mobile Navigation Toggle
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // ✅ Search Functionality
+  const searchInput = document.getElementById("searchInput");
+  const productContainer = document.getElementById("productContainer");
+  const moreProducts = document.getElementById("moreProducts");
+
+  searchInput.addEventListener("keyup", function () {
+    const filter = searchInput.value.toLowerCase();
+    const allCards = document.querySelectorAll(".card");
+
+    allCards.forEach(card => {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+      if (title.includes(filter)) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+</script>
+
+
+
+  
+
 </body>
 </html>
+
