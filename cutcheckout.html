@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Herbal Afro Farm Products Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    .checkout-container {
+      display: flex;
+      max-width: 1100px;
+      margin: 40px auto;
+      gap: 20px;
+    }
+    .cart {
+      flex: 2;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .cart-item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+    .cart-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .cart-item p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .cart-summary {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      height: fit-content;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    .summary-total {
+      font-weight: bold;
+      font-size: 18px;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+    }
+    .checkout-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .checkout-btn:hover {
+      background: #333;
+    }
+    .payment-icons img {
+      width: 45px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Herbal Afro Farm Products Ltd</div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="checkout-container">
+
+  <!-- Cart Items -->
+  <div class="cart">
+    <h2>Your Cart</h2>
+
+    <div class="cart-item">
+      <img src="gru.jpeg" alt="Maize">
+      <div>
+        <h3>Groundnut</h3>
+        <p>$6 / kg</p>
+        <label>Quantity: </label>
+        <input type="number" value="1" min="1" style="width:50px;">
+      </div>
+      <div style="margin-left:auto; font-weight:bold;">$6</div>
+    </div>
+
+   
+
+  <!-- Order Summary -->
+  <div class="cart-summary">
+    <h3>Order Summary</h3>
+    <div class="summary-row"><span>Items total</span> <span>$14</span></div>
+    <div class="summary-row"><span>Delivery</span> <span>$5</span></div>
+    <div class="summary-row summary-total"><span>Total</span> <span>$19</span></div>
+
+    <h4>How You'll Pay</h4>
+    <h4>Contact:  Herbalauranet@gmail.com</h4>
+
+
+
+    <div class="payment-icons">
+      <img src="visa.png" alt="Visa">
+      <img src="MasterCard_Logo.svg.png" alt="MasterCard">
+      <img src="visa.png" alt="PayPal">
+    </div>
+
+
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+
+</div>
+
+
+</body>
+</html>
